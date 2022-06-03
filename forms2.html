@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>The Form</title>
+    <style>
+        h4{
+            margin-left: 500px;
+        }
+        fieldset {
+            width: 40%;
+        }
+        form{
+            margin-left: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>The Form</h4>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label>First Name:</label>
+            <input type="text" id="fnamex" name="fname"><br><br>
+            <label>Last Name:</label>
+            <input type="text" id="lnamex" name="lname">
+            <br><br>
+            <span>Sex:</span>
+            <input type="radio" id="mlx" name="genderx">
+            <label for="mlx">Male</label><br>
+            <input type="radio" id="fmlx" name="genderx" style="margin-left: 36px;">
+            <label for="fmlx">Female</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Skills/Hobbies:</legend>
+            <label for="soft">Favourite Softwares:</label><br>
+            <input list="soft"><br>
+            <datalist id="soft">
+                <option value="MS Word">
+                <option value="MS Excel">
+                <option value="MS Powerpoint">
+                <option value="Figma">
+                <option value="Flutter">
+                <option value="VS Code">
+            </datalist>
+            <label for="bks">Favourite Books:</label><br>
+            <input list="bks">
+            <datalist id="bks">
+                <option value="Hooked">
+                <option value="The Design of Everyday Things">
+                <option value="Inspired">
+                <option value="The Lean Product Playbook">
+                <option value="Start at the End">
+                <option value="Escaping the Build Trap">
+            </datalist>
+            <br><br>
+            <label for="des">Favourite Product Designers:</label>
+            <select>
+                <option value="car">Car</option>
+                <option value="boy">Boy</option>
+                <option value="road">Road</option>
+                <option value="sea">Sea</option>
+                <option value="rag">Rag</option>
+                <option value="milk">Milk</option>
+            </select>
+        </fieldset>
+        <p>Further comments on product design:</p>
+        <textarea style="width: 200px; height: 100px;"></textarea>
+        <br>
+        <input type="submit" id="submit-button">
+    </form>
+
+    <a href="regiform.html">RegiForm</a>
+</body>
+
+</html>

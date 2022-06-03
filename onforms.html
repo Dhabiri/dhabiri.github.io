@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <style>
+        body {
+            background-color: #92D1AA;
+        }
+
+        form {
+            background-color: #c0c825;
+            border-radius: 10px;
+            opacity: 80%;
+            /* text-align: center; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="font-family: Arial;">Input Button</h2>
+    <form>
+        <p>Click the button bellow to access the page</p>
+        <input type="button" onclick="alert('Yo Welcome!')" value="Click Me!"><br><br><br>
+        <label for="uname">Username:</label><br>
+        <input type="text" id="uname"><br><br>
+        <label for="psw">Password:</label><br>
+        <input type="password" id="psw"><br><br>
+        <input type="submit" value="Submit">
+        <p>Put in your date of birth below:</p>
+        <input type="date"><br><br>
+        <label for="birthdaytime">Birthday date and time</label><br>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Submit"><br><br>
+        <label for="file">Attach a file here:</label><br><br>
+        <input type="file" id="file" name="file">
+        <input type="submit" id="file"><br><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit"><br><br>
+        <label for="bdaymonth">Birthday Month:</label>
+        <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+        <label for="nud">Numbers between 1 and 5</label><br>
+        <input type="number" id="nud" name="num" min="0" max="100" step="10"><br><br>
+        <label for="rng">Volume (between 1 and 50)</label><br>
+        <input type="range" id="rng" name="range" min="1" max="50"><br><br>
+        <label for="srch">Search forms:</label><br>
+        <input type="search" id="srch" name="srch"><br><br>
+        <label for="tnum">Input your telephone number:</label><br>
+        <input type="tel" id="tnum" name="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <label for="apt">Select a time:</label><br>
+        <input type="time" id="apt" name="time"><br><br>
+        <label for="homepage">Add homepage:</label>
+        <input type="url" id="homepage" name="homepage"><br><br>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        <p>Testing out readonly:</p>
+        <label for="fnm">First Name:</label><br>
+        <input type="email"  id="fnm" value="name" size="100"><br><br>
+        <label for="lnm">Last Name:</label><br>
+        <input type="text" id="lnm" value="name" readonly><br><br>
+        <!-- <input type="submit" value="Submit"    id="submit-button"><br><br><br> -->
+        <input type="button" value="Click Here" size="100">
+        <label for="">Enter the date before 1980-01-01:</label><br>
+        <input type="text" id="datemax">
+
+    </form>
+</body>
+
+</html>

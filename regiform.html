@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: #0f7fca;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffc87f;
+        }
+
+        p {
+            text-align: center;
+            color: #ff7400;
+        }
+
+        form {
+            color: #ff2a15;
+            text-align: center;
+            background-color: #ffd5bf;
+            opacity: 80%;
+            margin: 20px;
+            padding: 50px;
+            border-radius: 30px;
+        }
+
+        label {
+            color: #ff0021;
+        }
+
+        input {
+            text-align: center;
+            border: none;
+            background: transparent;
+            border-bottom: 4px solid #ff0021;
+        }
+
+        button {
+            background-color: #ff0021;
+            width: 90px;
+            height: 30px;
+            font-size: 15px;
+            border-radius: 15px;
+            font-family: times, serif;
+        }
+
+        .yobut {
+            box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+            background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+            background-color: #79bbff;
+            border-radius: 15px;
+            border: 1px solid #84bbf3;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #528ecc;
+        }
+
+        .yobut:hover {
+            background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+            background-color: #378de5;
+        }
+
+        .yobut:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <p>Input your details here</p>
+
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter First Name" required><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter Last Name" required><br><br>
+        <label for="pnum">Phone number:</label>
+        <input type="number" id="pnum" placeholder="Enter Phone Number" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" required><br><br>
+        <label for="psw">Password:</label>
+        <input type="password" id="psw" placeholder="Enter Pass word" required
+            pattern="(?=.[A-]) (?=.[a-z])(?=.*\d) .{8,}"
+            title="password must contain minimum of 8 characters,an uppercase,a lowercase and a digit" required><br><br>
+
+        <label for="gend">Gender:</label><br>
+        <input type="radio" id="gend" name="gender" required>
+        <label for="gend">Male</label>
+        <input type="radio" id="gend" name="gender" required>
+        <label for="gend">Female</label>
+        <input type="radio" id="gend" name="gender" required>
+        <label for="gend">Rather Not Say</label><br><br>
+        <label for="sof">State of Origin:</label>
+        <input list="sof">
+        <datalist id="sof">
+            <option value="Anambra">
+            <option value="Bauchi">
+            <option value="Bayelsa">
+            <option value="Benue">
+            <option value="Borno">
+            <option value="Cross-River">
+            <option value="Delta">
+            <option value="Edo">
+            <option value="Ebonyi">
+            <option value="Ekiti">
+            <option value="Enugu">
+            <option value="Gombe">
+            <option value="Imo">
+            <option value="Jigawa">
+            <option value="Kaduna">
+            <option value="Kano">
+            <option value="Kastina">
+            <option value="Kebbi">
+            <option value="Kwara">
+            <option value="Lagos">
+            <option value="Nassarawa">
+            <option value="Niger">
+            <option value="Ogun">
+            <option value="Ondo">
+            <option value="Osun">
+            <option value="Oyo">
+            <option value="Plateau">
+            <option value="Rivers">
+            <option value="Sokoto">
+            <option value="Taraba">
+            <option value="Yobe">
+            <option value="Zamfara">
+            <option value="FCT">
+        </datalist><br><br>
+        <input type="submit" valid="Send Message" id="submit-button">
+    </form>
+
+    <a href="onforms.html" class="yobut">On form</a>
+</body>
+
+</html>
